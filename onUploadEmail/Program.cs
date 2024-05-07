@@ -201,7 +201,7 @@ namespace onUploadEmail
                     string mailBuilder = "";
 
                     MailMessage mail = new MailMessage();
-                    SmtpClient SmtpServer = new SmtpClient("webmail.visographic.com ");
+                    SmtpClient SmtpServer = new SmtpClient("smtp.visographic.com");
 
                     mail.From = new MailAddress("kjacobsen@visographic.com");
 
@@ -244,7 +244,7 @@ namespace onUploadEmail
 
                   
 
-                    SmtpServer.Port = 587;
+                    SmtpServer.Port = 2525;
 
                     SmtpServer.Credentials = new System.Net.NetworkCredential("kjacobsen@visographic.com", "wood234StockA2**");
                     // SmtpServer.EnableSsl = true;
